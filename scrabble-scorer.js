@@ -8,7 +8,6 @@ let vowelBonusScore = 0
 let score = 0 
 
 
-
 const oldPointStructure = {
   1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
   2: ['D', 'G'],
@@ -84,12 +83,6 @@ function oldScrabbleScorer(word) {
  }
 
 
-
-
-
-
-
-
 // your job is to finish writing these functions and variables that we've named //
 // don't change the names or your program won't work as expected. //
 function initalPrompt() {
@@ -108,22 +101,22 @@ function scorerPrompt() {
 
 function runProgram() {
   
-   initalPrompt();
+initalPrompt();
 
 scorerPrompt();
 
-if (scorerPromptinput == 0){
+if (scorerPromptinput === '0'){
  score = simpleScrabbleScorer(userinput);
  console.log(`Score for '${userinput}' : ${simpleScore}`)
 
 
-} else if(scorerPromptinput == 1){
+} else if(scorerPromptinput === '1'){
  score = vowelbonusScrabbleScorer(userinput);
  console.log(`Score for '${userinput}' : ${vowelBonusScore}`)
 
 
 
-} else if(scorerPromptinput == 2){
+} else if(scorerPromptinput === '2'){
   score = oldScrabbleScorer(userinput);
   console.log(`Score for '${userinput}' : ${scrabblescore}`)
 
